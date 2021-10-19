@@ -4,87 +4,114 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/main.css" />
 		<title>Frontend Mentor | Time tracking dashboard</title>
 	</head>
 	<body>
-		Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-		<!-- daily -->
-		Previous - 7hrs
-		<!-- daily -->
-		32hrs
-		<!-- weekly -->
-		Previous - 36hrs
-		<!-- weekly -->
-		103hrs
-		<!-- monthly -->
-		Previous - 128hrs
-		<!-- monthly -->
-
-		Play 1hr
-		<!-- daily -->
-		Previous - 2hrs
-		<!-- daily -->
-		10hrs
-		<!-- weekly -->
-		Previous - 8hrs
-		<!-- weekly -->
-		23hrs
-		<!-- monthly -->
-		Previous - 29hrs
-		<!-- monthly -->
-
-		Study 0hrs
-		<!-- daily -->
-		Previous - 1hr
-		<!-- daily -->
-		4hrs
-		<!-- weekly -->
-		Previous - 7hrs
-		<!-- weekly -->
-		13hrs
-		<!-- monthly -->
-		Previous - 19hrs
-		<!-- monthly -->
-
-		Exercise 1hr
-		<!-- daily -->
-		Previous - 1hr
-		<!-- daily -->
-		4hrs
-		<!-- weekly -->
-		Previous - 5hrs
-		<!-- weekly -->
-		11hrs
-		<!-- monthly -->
-		Previous - 18hrs
-		<!-- monthly -->
-
-		Social 1hr
-		<!-- daily -->
-		Previous - 3hrs
-		<!-- daily -->
-		5hrs
-		<!-- weekly -->
-		Previous - 10hrs
-		<!-- weekly -->
-		21hrs
-		<!-- monthly -->
-		Previous - 23hrs
-		<!-- monthly -->
-
-		Self Care 0hrs
-		<!-- daily -->
-		Previous - 1hr
-		<!-- daily -->
-		2hrs
-		<!-- weekly -->
-		Previous - 2hrs
-		<!-- weekly -->
-		7hrs
-		<!-- monthly -->
-		Previous - 11hrs
-		<!-- monthly -->
+		<main>
+			<div class="jeremy-block">
+				<div class="profile">
+					<img src="images/image-jeremy.png" alt="profile picture" />
+					<p>Report for</p>
+					<p>Jeremy Robson</p>
+				</div>
+				<div class="buttons-block">
+					<button id="daily">Daily</button>
+					<button id="weekly">Weekly</button>
+					<button id="monthly">Monthly</button>
+				</div>
+			</div>
+			<div class="description-block">
+				<div class="bg">
+					<img src="images/icon-work.svg" alt="work icon">
+				</div>
+				<div class="description">
+					<div class="first-line">
+						<p>Work</p>
+						<span class="ellipses"></span>
+					</div>
+					<div class="second-line">
+						<p><span class="current">32</span>hrs</p>
+						<p>Last <span class="time-frame">Week</span> - <span class="previous">36</span>hrs</p>
+					</div>
+				</div>
+			</div>
+			<div class="description-block">
+				<div class="bg">
+					<img src="images/icon-play.svg" alt="video game icon">
+				</div>
+				<div class="description">
+					<div class="first-line">
+						<p>Play</p>
+						<span class="ellipses"></span>
+					</div>
+					<div class="second-line">
+						<p><span class="current">10</span>hrs</p>
+						<p>Last <span class="time-frame">Week</span> - <span class="previous">8</span>hrs</p>
+					</div>
+				</div>
+			</div>
+			<div class="description-block">
+				<div class="bg">
+					<img src="images/icon-study.svg" alt="books icon">
+				</div>
+				<div class="description">
+					<div class="first-line">
+						<p>Study</p>
+						<span class="ellipses"></span>
+					</div>
+					<div class="second-line">
+						<p><span class="current">4</span>hrs</p>
+						<p>Last <span class="time-frame">Week</span> - <span class="previous">7</span>hrs</p>
+					</div>
+				</div>
+			</div>
+			<div class="description-block">
+				<div class="bg">
+					<img src="images/icon-exercise.svg" alt="runner's icon">
+				</div>
+				<div class="description">
+					<div class="first-line">
+						<p>Exercise</p>
+						<span class="ellipses"></span>
+					</div>
+					<div class="second-line">
+						<p><span class="current">4</span>hrs</p>
+						<p>Last <span class="time-frame">Week</span> - <span class="previous">5</span>hrs</p>
+					</div>
+				</div>
+			</div>
+			<div class="description-block">
+				<div class="bg">
+					<img src="images/icon-social.svg" alt="message icon">
+				</div>
+				<div class="description">
+					<div class="first-line">
+						<p>Social</p>
+						<span class="ellipses"></span>
+					</div>
+					<div class="second-line">
+						<p><span class="current">32</span>hrs</p>
+						<p>Last <span class="time-frame">Week</span> - <span class="previous">10</span>hrs</p>
+					</div>
+				</div>
+			</div>
+			<div class="description-block">
+				<div class="bg">
+					<img src="images/icon-self-care.svg" alt="heart icon">
+				</div>
+				<div class="description">
+					<div class="first-line">
+						<p>Self Care</p>
+						<span class="ellipses"></span>
+					</div>
+					<div class="second-line">
+						<p><span class="current">4</span>hrs</p>
+						<p>Last <span class="time-frame">Week</span> - <span class="previous">2</span>hrs</p>
+					</div>
+				</div>
+			</div>
+		</main>
 
 		<script src="app.js"></script>
 	</body>
