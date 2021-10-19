@@ -10,11 +10,15 @@ $soft-orange: hsl(43, 84%, 65%); //self care
 
 //Neutral colors
 
-$ver-dark-blue: hsl(226, 43%, 10%);
-$dark-blue: hsl(235, 46%, 20%);
-$unsaturated-blue: hsl(235, 45%, 61%);
-$pal-Blue: hsl(236, 100%, 87%);
+$ver-dark-blue: hsl(226, 43%, 10%); //body bg
+$dark-blue: hsl(235, 46%, 20%); // description block and buttons block
+$unsaturated-blue: hsl(235, 45%, 61%); 
+$pal-blue: hsl(236, 100%, 87%);
+$white:rgb(240,240,240);
 
 //Font-family
 
 $font-family: "Rubik", sans-serif; //Weights: 300, 400, 500
+
+//left and right padding: 20px
+// border-radius:15px

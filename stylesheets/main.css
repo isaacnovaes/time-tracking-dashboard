@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+  /* Set core root defaults */
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button, input, textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* Remove all animations, transitions, and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #0f1424;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto 20px;
+}
+
+.jeremy-block .profile {
+  position: relative;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+      grid-template-columns: 30% auto;
+  -ms-grid-rows: 40% auto;
+      grid-template-rows: 40% auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: 5px;
+  background-color: #5847eb;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.jeremy-block .profile img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 3 / 2;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.jeremy-block .profile p {
+  color: #bdc1ff;
+  margin-left: 15px;
+}
+
+.jeremy-block .profile p:first-of-type {
+  margin-top: 20px;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.jeremy-block .profile p:last-of-type {
+  font-size: 1.1rem;
+  font-weight: 400;
+  word-spacing: 8px;
+}
+
+.jeremy-block .buttons-block {
+  position: relative;
+  z-index: 1;
+  background-color: #1c1f4a;
+  padding: 20px;
+  padding-top: 40px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  border-radius: 0 0 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jeremy-block .buttons-block button {
+  color: #bdc1ff;
+  background-color: inherit;
+  border: none;
+  font-size: .9rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 20px;
+  outline: 1px solid red;
+}
+
+.jeremy-block .buttons-block button:hover {
+  color: #f0f0f0;
+  cursor: pointer;
+}

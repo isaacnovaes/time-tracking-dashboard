@@ -3,6 +3,8 @@ html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%; //Prevent adjustments of font size after orientation changes in iOS.
 	font-size: 18px;
+	font-weight: 300;
+	font-family: $font-family;
 
 	/* Set core root defaults */
 	&:focus-within {
