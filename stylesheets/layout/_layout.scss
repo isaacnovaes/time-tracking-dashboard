@@ -50,30 +50,134 @@ main {
 		position: relative;
 		z-index: 1;
 		background-color: $dark-blue;
-		padding: 20px;
-		padding-top: 40px;
-		transform: translateY(-20px);
+		padding: 40px 20px 0;
+		transform: translateY(-40px);
 		border-radius: 0 0 15px 15px;
-        display: flex;
-        justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden; // hide buttons bg overflow
 
-        button {
-            color:$pal-blue;
-            background-color: inherit;
-            border: none;
-            font-size: .9rem;
-            transition: .5s;
-            padding:20px;
-            outline: 1px solid red;
+		button {
+			color: $pal-blue;
+			background-color: inherit;
+			border: none;
+			font-size: 0.9rem;
+			transition: 0.3s;
+			padding: 20px;
 
-            &:hover {
-                color: $white;
-                cursor: pointer;
-            }
-        }
+			&:nth-child(1) {
+				transform: translateX(-20px); //Fix vertical align distorted by the padding
+			}
+			&:nth-child(3) {
+				transform: translateX(20px); //Fix vertical align distorted by the padding
+			}
+
+			&:hover {
+				color: $white;
+				cursor: pointer;
+			}
+		}
 	}
 }
 
-// .description-block {
-//     // outline: 1px solid green;
-// }
+.description-block {
+	position: relative;
+	height: 155px;
+	margin-bottom: 30px;
+
+	&:hover .description {
+		background-color: $unsaturated-blue;
+	}
+
+	.bg {
+		position: relative;
+		z-index: 1;
+		border-radius: 15px;
+		display: flex;
+		justify-content: flex-end;
+		height: 70px;
+		overflow: hidden;
+
+		img {
+			margin-right: 15px;
+			width: 80px;
+			object-fit: contain;
+			transform: translateY(-10px);
+		}
+	}
+
+	.work {
+		background-color: $light-orange;
+	}
+	.play {
+		background-color: $soft-blue;
+	}
+	.study {
+		background-color: $light-red;
+	}
+	.exercise {
+		background-color: $lime-green;
+	}
+	.social {
+		background-color: $violet;
+	}
+	.self-care {
+		background-color: $soft-orange;
+	}
+
+	.description {
+		position: relative;
+		z-index: 2;
+		background-color: $dark-blue;
+		padding: 20px;
+		transform: translateY(-30px); // Fix vertical align distorted by the padding
+		border-radius: 15px;
+		color: $white;
+		transition: 0.5s;
+
+		.first-line {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			p {
+				font-weight: 500;
+				font-size: 0.9rem;
+			}
+
+			span {
+				background: url("../../images/icon-ellipsis.svg") no-repeat center;
+				height: 5px;
+				width: 21px;
+				padding: 20px 25px;
+				transform: translateX(10px); // keep vertical align while padding is 20px
+				// and the bg image is centered
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.second-line {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 5px;
+
+			p:first-of-type {
+				font-size: 1.4rem;
+				opacity: 0.85;
+			}
+			p:last-of-type {
+				color: $pal-blue;
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+
+// <div class="second-line">
+// 	<p><span class="current">32</span>hrs</p>
+// 	<p>Last <span class="time-frame">Week</span> - <span class="previous">10</span>hrs</p>
+// </div>

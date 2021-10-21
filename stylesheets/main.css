@@ -147,10 +147,9 @@ main {
   position: relative;
   z-index: 1;
   background-color: #1c1f4a;
-  padding: 20px;
-  padding-top: 40px;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  padding: 40px 20px 0;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
   border-radius: 0 0 15px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,20 +157,153 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .jeremy-block .buttons-block button {
   color: #bdc1ff;
   background-color: inherit;
   border: none;
-  font-size: .9rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  font-size: 0.9rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: 20px;
-  outline: 1px solid red;
+}
+
+.jeremy-block .buttons-block button:nth-child(1) {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.jeremy-block .buttons-block button:nth-child(3) {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
 }
 
 .jeremy-block .buttons-block button:hover {
   color: #f0f0f0;
   cursor: pointer;
+}
+
+.description-block {
+  position: relative;
+  height: 155px;
+  margin-bottom: 30px;
+}
+
+.description-block:hover .description {
+  background-color: #6f76c8;
+}
+
+.description-block .bg {
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 70px;
+  overflow: hidden;
+}
+
+.description-block .bg img {
+  margin-right: 15px;
+  width: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.description-block .work {
+  background-color: #ff8c66;
+}
+
+.description-block .play {
+  background-color: #56c2e6;
+}
+
+.description-block .study {
+  background-color: #ff5c7c;
+}
+
+.description-block .exercise {
+  background-color: #4acf81;
+}
+
+.description-block .social {
+  background-color: #7536d3;
+}
+
+.description-block .self-care {
+  background-color: #f1c65b;
+}
+
+.description-block .description {
+  position: relative;
+  z-index: 2;
+  background-color: #1c1f4a;
+  padding: 20px;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  border-radius: 15px;
+  color: #f0f0f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.description-block .description .first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description-block .description .first-line p {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.description-block .description .first-line span {
+  background: url("../../images/icon-ellipsis.svg") no-repeat center;
+  height: 5px;
+  width: 21px;
+  padding: 20px 25px;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.description-block .description .first-line span:hover {
+  cursor: pointer;
+}
+
+.description-block .description .second-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.description-block .description .second-line p:first-of-type {
+  font-size: 1.4rem;
+  opacity: 0.85;
+}
+
+.description-block .description .second-line p:last-of-type {
+  color: #bdc1ff;
+  font-size: 0.8rem;
 }
