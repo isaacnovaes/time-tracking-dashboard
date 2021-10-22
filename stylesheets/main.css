@@ -307,3 +307,98 @@ main {
   color: #bdc1ff;
   font-size: 0.8rem;
 }
+
+@media screen and (min-width: 900px) {
+  body {
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  main {
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% auto auto auto;
+        grid-template-columns: 25% auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+    row-gap: 0px;
+  }
+  main .jeremy-block {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 3 / 2;
+    height: 400px;
+  }
+  main .jeremy-block .profile {
+    -ms-grid-columns: 30%;
+        grid-template-columns: 30%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    row-gap: 10px;
+    padding-bottom: 30px;
+  }
+  main .jeremy-block .profile img {
+    width: 120%;
+    grid-area: auto / auto / auto / auto;
+  }
+  main .jeremy-block .profile p {
+    margin-left: 0;
+  }
+  main .jeremy-block .profile p:first-of-type {
+    margin-top: 10px;
+  }
+  main .jeremy-block .profile p:last-of-type {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #f0f0f0;
+  }
+  main .jeremy-block .buttons-block {
+    padding: 40px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .jeremy-block .buttons-block button {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+  }
+  main .jeremy-block .buttons-block button:nth-child(1) {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  main .jeremy-block .buttons-block button:nth-child(3) {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    padding: 12px 20px 20px;
+  }
+  main .description-block {
+    height: auto;
+    margin: 0;
+  }
+  main .description-block .description {
+    padding-top: 10px;
+  }
+  main .description-block .description .second-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .description-block .description .second-line p:first-of-type {
+    font-size: 2.5rem;
+  }
+  main .description-block .description .second-line p:last-of-type {
+    margin-top: 7px;
+  }
+}

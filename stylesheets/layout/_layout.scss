@@ -66,10 +66,10 @@ main {
 			padding: 20px;
 
 			&:nth-child(1) {
-				transform: translateX(-20px); //Fix vertical align distorted by the padding
+				transform: translateX(-20px); //Fix vertical alignment distorted by the padding
 			}
 			&:nth-child(3) {
-				transform: translateX(20px); //Fix vertical align distorted by the padding
+				transform: translateX(20px); //Fix vertical alignment distorted by the padding
 			}
 
 			&:hover {
@@ -130,7 +130,7 @@ main {
 		z-index: 2;
 		background-color: $dark-blue;
 		padding: 20px;
-		transform: translateY(-30px); // Fix vertical align distorted by the padding
+		transform: translateY(-30px); // Fix vertical alignment distorted by the padding
 		border-radius: 15px;
 		color: $white;
 		transition: 0.5s;
@@ -150,7 +150,7 @@ main {
 				height: 5px;
 				width: 21px;
 				padding: 20px 25px;
-				transform: translateX(10px); // keep vertical align while padding is 20px
+				transform: translateX(10px); // keep vertical alignment while padding is 20px
 				// and the bg image is centered
 
 				&:hover {
@@ -177,7 +177,3 @@ main {
 	}
 }
 
-// <div class="second-line">
-// 	<p><span class="current">32</span>hrs</p>
-// 	<p>Last <span class="time-frame">Week</span> - <span class="previous">10</span>hrs</p>
-// </div>
