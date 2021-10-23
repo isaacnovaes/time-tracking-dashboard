@@ -1,26 +1,26 @@
-// // animation for phones and tablets
-// .jeremy-block {
-//     animation: animateJeremy 4s .5s both;
-// }
+// animation for phones and tablets
+.jeremy-block {
+    animation: animateJeremy 4s .5s both;
+}
 
-// @keyframes animateJeremy {
-//     from {opacity: 0; transform: rotateY(360deg);}
-//     to {opacity: 1; transform: rotateY(0);}
-// }
+@keyframes animateJeremy {
+    from {opacity: 0; transform: rotateY(360deg);}
+    to {opacity: 1; transform: rotateY(0);}
+}
 
-// .description-block:nth-of-type(odd) {
-//     animation: animateDescriptionBlockOdd 2s both;
-// }
-// .description-block:nth-of-type(even) {
-//     animation: animateDescriptionBlockEven 2s both;
-// }
+.description-block:nth-of-type(odd) {
+    animation: animateDescriptionBlockOdd 2s both;
+}
+.description-block:nth-of-type(even) {
+    animation: animateDescriptionBlockEven 2s both;
+}
 
-// @keyframes animateDescriptionBlockOdd {
-//     from {opacity: 0; transform: translateX(-500px);}
-//     to {opacity: 1; transform: translateX(0);}
-// }
+@keyframes animateDescriptionBlockOdd {
+    from {opacity: 0; transform: translateX(-500px);}
+    to {opacity: 1; transform: translateX(0);}
+}
 
-// @keyframes animateDescriptionBlockEven {
-//     from {opacity: 0; transform: translateX(500px);}
-//     to {opacity: 1; transform: translateX(0);}
-// }
+@keyframes animateDescriptionBlockEven {
+    from {opacity: 0; transform: translateX(500px);}
+    to {opacity: 1; transform: translateX(0);}
+}
