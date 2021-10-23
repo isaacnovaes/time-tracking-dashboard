@@ -6,6 +6,7 @@ main {
 	width: 90%;
 	max-width: 1000px;
 	margin: 50px auto 20px;
+	overflow: hidden; // allow animation to work properly
 }
 
 .jeremy-block {
@@ -62,11 +63,27 @@ main {
 			background-color: inherit;
 			border: none;
 			font-size: 0.9rem;
-			transition: 0.3s;
+			transition: 0.5s ease;
 			padding: 20px;
+			position: relative;
+			display: block;
+
+			&::before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 2px;
+				position: absolute;
+				bottom: 8px;
+				background-color: $pal-blue;
+				transition: 0.5s ease;
+			}
 
 			&:nth-child(1) {
 				transform: translateX(-20px); //Fix vertical alignment distorted by the padding
+			}
+			&:nth-child(2) {
+				color: $white;
 			}
 			&:nth-child(3) {
 				transform: translateX(20px); //Fix vertical alignment distorted by the padding
@@ -75,6 +92,9 @@ main {
 			&:hover {
 				color: $white;
 				cursor: pointer;
+				&:before {
+					width: 60px;
+				}
 			}
 		}
 	}

@@ -94,6 +94,7 @@ main {
   width: 90%;
   max-width: 1000px;
   margin: 50px auto 20px;
+  overflow: hidden;
 }
 
 .jeremy-block .profile {
@@ -165,14 +166,32 @@ main {
   background-color: inherit;
   border: none;
   font-size: 0.9rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   padding: 20px;
+  position: relative;
+  display: block;
+}
+
+.jeremy-block .buttons-block button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 8px;
+  background-color: #bdc1ff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .jeremy-block .buttons-block button:nth-child(1) {
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
+}
+
+.jeremy-block .buttons-block button:nth-child(2) {
+  color: #f0f0f0;
 }
 
 .jeremy-block .buttons-block button:nth-child(3) {
@@ -183,6 +202,10 @@ main {
 .jeremy-block .buttons-block button:hover {
   color: #f0f0f0;
   cursor: pointer;
+}
+
+.jeremy-block .buttons-block button:hover:before {
+  width: 60px;
 }
 
 .description-block {
@@ -425,5 +448,90 @@ main {
   }
   main .description-block .description .second-line p:last-of-type {
     margin-top: 7px;
+  }
+}
+
+.jeremy-block {
+  -webkit-animation: animateJeremy 4s .5s both;
+          animation: animateJeremy 4s .5s both;
+}
+
+@-webkit-keyframes animateJeremy {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateJeremy {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.description-block:nth-of-type(odd) {
+  -webkit-animation: animateDescriptionBlockOdd 2s both;
+          animation: animateDescriptionBlockOdd 2s both;
+}
+
+.description-block:nth-of-type(even) {
+  -webkit-animation: animateDescriptionBlockEven 2s both;
+          animation: animateDescriptionBlockEven 2s both;
+}
+
+@-webkit-keyframes animateDescriptionBlockOdd {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animateDescriptionBlockOdd {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes animateDescriptionBlockEven {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animateDescriptionBlockEven {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
