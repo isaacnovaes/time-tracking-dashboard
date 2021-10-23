@@ -31,10 +31,6 @@ img {
 	border-style: none; //Remove the border on images inside links in IE 10.
 }
 
-a {
-	text-decoration: none;
-}
-
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
@@ -85,23 +81,24 @@ button:-moz-focusring,
 
 //Style the scrollbar
 
-// html::-webkit-scrollbar {
-//     width: 10px;
-// }
+html::-webkit-scrollbar {
+    width: 10px;
+}
 
-// html::-webkit-scrollbar-track {
-//     background: rgb(78, 77, 77);
-// }
+html::-webkit-scrollbar-track {
+	background: rgb(78, 77, 77);
+}
 
-// html::-webkit-scrollbar-thumb {
-//     background: rgba(131, 131, 131, 0.746);
-// }
+html::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+    background: rgba(131, 131, 131, 0.746);
+}
 
-// html::-webkit-scrollbar-thumb:hover {
-//     background: rgb(56, 56, 56);
-// }
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(56, 56, 56);
+}
 
-// html::-webkit-scrollbar-thumb:active {
-//     background: rgba(27, 27, 27, 0.8);
-//     border-radius: 10px;
-// }
+html::-webkit-scrollbar-thumb:active {
+    background: $pal-blue;
+    border-radius: 10px;
+}
