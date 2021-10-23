@@ -34,10 +34,6 @@ img {
   border-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
@@ -84,6 +80,28 @@ button:-moz-focusring,
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #4e4d4d;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgba(131, 131, 131, 0.746);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #383838;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: #bdc1ff;
+  border-radius: 10px;
 }
 
 body {
@@ -459,18 +477,26 @@ main {
 @-webkit-keyframes animateJeremy {
   from {
     opacity: 0;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
   to {
     opacity: 1;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
   }
 }
 
 @keyframes animateJeremy {
   from {
     opacity: 0;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
   to {
     opacity: 1;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
   }
 }
 
