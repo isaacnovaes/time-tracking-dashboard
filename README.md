@@ -1,6 +1,6 @@
 # Frontend Mentor - Time tracking dashboard solution
 
-[Live Site](http://)
+[Live Site](https://timetrackdashboardisaac.netlify.app/)
 ![Project preview](design/desktop-design.png)
 
 
@@ -39,7 +39,7 @@ The text for the previous period's time should change based on the active timefr
 
 ### Links
 
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://timetrackdashboardisaac.netlify.app/)
 
 ## My process
 
