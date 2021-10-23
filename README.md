@@ -1,9 +1,9 @@
 # Frontend Mentor - Time tracking dashboard solution
 
 [Live Site](http://)
-![Project preview](design/desktop-preview.jpg)
+![Project preview](design/desktop-design.png)
 
-This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
 
 ## Table of contents
 
@@ -16,8 +16,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
 
 ## Overview
 
@@ -35,8 +33,9 @@ The text for the previous period's time should change based on the active timefr
 
 ### Screenshot
 
-[Mobile](design/mobile-design.jpg)
-[Desktop](design/desktop-design.jpg)
+[Mobile](design/mobile-design.png)
+
+[Desktop](design/desktop-design.png)
 
 ### Links
 
@@ -53,17 +52,6 @@ The text for the previous period's time should change based on the active timefr
 - Flexbox
 - CSS Grid
 - JavaScript
+- Animations
 
-### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
