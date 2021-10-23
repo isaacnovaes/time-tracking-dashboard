@@ -191,10 +191,6 @@ main {
   margin-bottom: 30px;
 }
 
-.description-block:hover .description {
-  background-color: #6f76c8;
-}
-
 .description-block .bg {
   position: relative;
   z-index: 1;
@@ -255,6 +251,10 @@ main {
   transition: 0.5s;
 }
 
+.description-block .description:hover {
+  background-color: #6f76c8;
+}
+
 .description-block .description .first-line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,7 +308,32 @@ main {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 350px) {
+  .jeremy-block .buttons-block button {
+    padding: 20px 5px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 900px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    row-gap: 0px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  main .jeremy-block {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+@media screen and (min-width: 901px) {
   body {
     min-height: 100vh;
     display: -ms-grid;
@@ -323,8 +348,8 @@ main {
         grid-template-columns: 25% auto auto auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
-    -webkit-column-gap: 25px;
-            column-gap: 25px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
     row-gap: 0px;
   }
   main .jeremy-block {

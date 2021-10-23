@@ -85,10 +85,6 @@ main {
 	height: 155px;
 	margin-bottom: 30px;
 
-	&:hover .description {
-		background-color: $unsaturated-blue;
-	}
-
 	.bg {
 		position: relative;
 		z-index: 1;
@@ -135,6 +131,10 @@ main {
 		color: $white;
 		transition: 0.5s;
 
+		&:hover {
+			background-color: $unsaturated-blue;
+		}
+
 		.first-line {
 			display: flex;
 			justify-content: space-between;
@@ -176,4 +176,3 @@ main {
 		}
 	}
 }
-
