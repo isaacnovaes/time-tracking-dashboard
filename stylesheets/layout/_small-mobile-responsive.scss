@@ -1,0 +1,11 @@
+@media screen and (max-width: 350px) {
+	// to give a little bit of room for buttons on small mobile screen
+	// on small mobile screen
+	.jeremy-block {
+		.buttons-block {
+			button {
+				padding: 20px 5px;
+			}
+		}
+	}
+}
