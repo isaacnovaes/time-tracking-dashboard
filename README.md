@@ -52,6 +52,7 @@ The text for the previous period's time should change based on the active timefr
 - Flexbox
 - CSS Grid
 - JavaScript
+- Fetch API
 - Animations
 
 
